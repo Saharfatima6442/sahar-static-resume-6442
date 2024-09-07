@@ -42,9 +42,9 @@ body {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
     object-fit: cover;
     margin-left: 20px;
 }
