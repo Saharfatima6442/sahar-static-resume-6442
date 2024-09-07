@@ -1,27 +1,16 @@
-// Greet the user
-function greetUser(): void {
-    const header = document.querySelector('header') as HTMLElement;
-    const greeting = document.createElement('p');
-    greeting.textContent = "Welcome to my professional resume!";
-    greeting.style.fontStyle = "italic";
-    header.appendChild(greeting);
-}
+// Add a welcome message
 
-// Display education dynamically
-function displayEducation(): void {
-    const educationSection = document.querySelector('.education') as HTMLElement;
-    const educationInfo = {
-        institution: "University of XYZ",
-        degree: "Bachelor of Computer Science",
-        year: "2022"
-    };
 
-    const educationDetails = document.createElement('p');
-    educationDetails.textContent = `${educationInfo.degree} from ${educationInfo.institution}, Graduated: ${educationInfo.year}`;
-    educationSection.appendChild(educationDetails);
+function displayWelcomeMessage(): void {
+    const container = document.querySelector('.resume-container') as HTMLElement;
+    const message = document.createElement('p');
+    message.textContent = "Welcome to Sahar Fatima's Static Resume!";
+    message.style.textAlign = 'center';
+    message.style.fontStyle = 'italic';
+    container.insertBefore(message, container.firstChild);
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    greetUser();
-    displayEducation();
+    displayWelcomeMessage();
 });
